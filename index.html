@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Girish Hakki</title>
+    <!-- <link rel="icon" href="https://www.w3schools.com/favicon.ico" /> -->
+    <link rel="shortcut icon" type="x-icon" href="hakki_logo.png">
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Font = Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google font = Source code pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <a href="#" class="menu-btn">
+          <div class="w3schools-logo">
+            <img src="hakki_logo.png"/>
+          </div>
+        </a>
+        <div href="#Tutorials" class="menu-btn" id="Tutorial-btn">
+          Tutorials
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div href="#references" class="menu-btn" id="reference-btn">
+          References
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+        
+        <div href="#exercises" class="menu-btn" id="exercises-btn">
+          Exercises
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <!-- <div href="#video" class="menu-btn" id="video-btn">Videos</div> -->
+
+        <!--Mobile view menu  -->
+        <div class="menu-btn" id="menu-btn-mobile">
+          Menu
+          <i class="fa-solid fa-caret-down" class="menu-btn"></i>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <div class="toggleLightDark btn">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </div>
+        <div class="toggleTranslate">
+          <i class="fa-solid fa-earth-asia"></i>
+        </div>
+        <div class="toggle_Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <!-- <a href="#upgrade" class="btn btn-link bg-black" id="upgrade-btn">
+          Upgrade
+        </a> -->
+        <a href="./myportfolio/index.html" target="_blank" class="btn btn-link bg-pink" id="getcertified">
+          About Girish
+        </a>
+        <a href="./login/login.html" class="btn btn-link bg-green" id="login-btn">
+          Login
+        </a>
+      </div>
+    </header>
+
+    <!-- mobile menu bar -->
+    <div class="mobile-menu-container" id="mobile-menu-nav">
+      <div class="mobile-menu-close-btn">
+        <button id="mobile-nav-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <ul>
+        <div
+          href="#Tutorials"
+          class="menu-btn-mobile_menu"
+          id="tutorial_menuLink_mobile"
+        >
+          Tutorials
+          <i class="fa-solid fa-caret-down"></i>
+          <div
+            class="nested-navigation-container_content_Mobile mobile_menuActive_tutorial"
+            id="Tutorial_menu_mobile"
+          >
+            <h1>Tutorials</h1>
+            <h2>html css</h2>
+            <a href="#">hhfyfhjdfghjk</a>
+          </div>
+        </div>
+        <div
+          href="#references"
+          class="menu-btn-mobile_menu"
+          id="references_menuLink_mobile"
+        >
+          References
+          <i class="fa-solid fa-caret-down"></i>
+          <div
+            class="nested-navigation-container_content_Mobile mobile_menuActive_tutorial"
+            id="references_menu_mobile"
+          >
+            <h1>Tutorials</h1>
+            <h2>html css</h2>
+            <a href="#">hhfyfhjdfghjk</a>
+          </div>
+        </div>
+        <div href="#exercises" class="menu-btn-mobile_menu">
+          Exercises
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div href="#video" class="menu-btn-mobile_menu">Videos</div>
+      </ul>
+    </div>
+
+    <!-- this is nested navigation bar-->
+    <div
+      class="nested-navigation-container nested_navigation_hidden"
+      id="nested-navigation-container_id"
+    >
+      <div
+        class="nested-navigation-container_close-btn"
+        id="nested-navigation-close-btn"
+      >
+        <button><i class="fa-solid fa-xmark" class="menu-btn"></i></button>
+      </div>
+
+      <div
+        class="nested-navigation-container_content"
+        id="nested-navigation-container_contentID"
+      >
+        <!-- render the menu of all here -->
+      </div>
+    </div>
+
+    <!-- ************************  -----------------*******************-->
+
+    <section class="section_Heading">
+      <div class="section_container">
+        <h1>Fuel your Skills</h1>
+        <p>With Girish Hakki's Developed Site.</p>
+        <div class="section_Heading_search">
+          <input type="text" placeholder="Search tutorial, e.g. HTML" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <a href="#">Not Sure Where To Begin?</a>
+      </div>
+      <svg
+        style="background-color: #d9eee1"
+        width="100%"
+        height="70"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        <path
+          id="wavepath"
+          d="M0,0  L110,0C35,150 35,0 0,100z"
+          fill="#282A35"
+        ></path>
+      </svg>
+    </section>
+    <div class="svgBug"></div>
+
+    <!-- html page -->
+    <section class="section_html">
+      <div class="section_left">
+        <h1>HTML</h1>
+        <p>It's for Building Web Pages</p>
+        <a href="https://www.w3schools.com/html/default.asp" target="_blank" class="bg-green">Learn HTML</a>
+        <a href="https://youtu.be/BsDoLVMnmZs?si=og-Wh0d3mlq3rm2R" target="_blank" class="bg-yellow">Video Tutorial</a>
+        <a href="./notes/HTML.pdf" download="HTML.pdf" class="bg-black">HTML Notes</a>
+        
+      </div>
+
+      <div class="section_right">
+        <div class="editor_container">
+          <h1>HTML Example :</h1>
+          <div class="editor" id="htmlcode">
+          </div>
+          <a href="https://codepen.io/pen/" target="_blank" class="editor_btn">Try Once</a>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- css page -->
+    <section class="section_css">
+      <div class="section_left">
+        <h1>CSS</h1>
+        <p>It's for Styling Web Pages</p>
+        <a href="https://www.w3schools.com/css/default.asp" class="bg-green">Learn CSS</a>
+        <a href="https://youtu.be/tPPffuMYsfs?si=5Gu3pjzUMhiGSZoW" class="bg-black">Video Tutorial</a>
+        <a href="./notes/CSS.pdf" download="CSS.pdf" class="bg-pink">CSS Notes</a>
+      </div>
+
+      <div class="section_right">
+        <div class="editor_container">
+          <h1>CSS Example :</h1>
+          <div class="editor" id="cssCode">
+          </div>
+          <a href="https://codepen.io/pen/" target="_blank" class="editor_btn">Try Once</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript page -->
+    <section class="section_javascript">
+      <div class="section_left">
+        <h1>JavaScript</h1>
+        <p>It's for Programming Web Pages</p>
+        <a href="https://www.w3schools.com/javascript/default.asp" class="bg-green">Learn JS</a>
+        <a href="https://youtu.be/PlbupGCBV6w?si=TQIBhg89BlIrs4kJ" class="bg-white">Video Tutorial</a>
+        <a href="./notes/Javascript.pdf" download="Javascript.pdf" class="bg-pink">JS Notes</a>
+      </div>
+
+      <div class="section_right">
+        <div class="editor_container">
+          <h1>Js Example :</h1>
+          <div class="editor" id="javaScriptCode">
+          </div>
+          <a href="https://codepen.io/pen/" target="_blank" class="editor_btn">Try Once</a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Python page -->
+    <section class="section_python">
+      <div class="section_left">
+        <h1>Python</h1>
+        <p>Popular Language</p>
+        <a href="https://www.w3schools.com/python/default.asp" class="bg-green">Learn Python</a>
+        <a href="https://youtu.be/rfscVS0vtbw?si=bO-WJDGme7ijhISa" class="bg-black">Video Tutorial</a>
+        <a href="./notes/Python.pdf" download="Python.pdf" class="bg-pink">Python Notes</a>
+      </div>
+
+      <div class="section_right">
+        <div class="editor_container">
+          <h1>Python Example :</h1>
+          <div class="editor" id="pythonCode">
+          </div>
+          <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" class="editor_btn">Try Once</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SQL page -->
+    <section class="section_sql">
+      <div class="section_left">
+        <h1>SQL</h1>
+        <p>It's for Databases</p>
+        <a href="https://www.w3schools.com/sql/default.asp" class="bg-green">Learn SQL</a>
+        <a href="https://youtu.be/HXV3zeQKqGY?si=TxNsbgP9mGhF3o_9" class="bg-black">Video Tutorial</a>
+        <a href="./notes/sql.pdf" download="sql.pdf" class="bg-pink">SQL Notes</a>
+      </div>
+
+      <div class="section_right">
+        <div class="editor_container">
+          <h1>SQL Example :</h1>
+          <div class="editor" id="SQLCode">
+          </div>
+          <a href="https://www.programiz.com/sql/online-compiler/" target="_blank" class="editor_btn">Try Once</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js" type="module"></script>
+
+    <!-- footer -->
+    <footer>
+
+      <div class="footerContainer">
+        <div class="footertext">
+          Lets Work Together..
+        </div>
+        <div class="socialIcons">
+          <a href="https://github.com/GirishHakki" target="_blank""><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/girish-hakki-446a00143/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/girish_hakki/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com/girish_rh" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100004868838251" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <p>Copyright &copy; 2024, Crafted with 💛 Designed by <span class="designer">Girish Hakki</span></p>
+        <a href="#home" class="scroll-top">
+            <i class="ri-arrow-up-s-fill"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
